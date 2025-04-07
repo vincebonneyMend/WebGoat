@@ -3,6 +3,7 @@
     "configMode": "AUTO",
     "configExternalURL": "",
     "projectToken": "",
+    "enableReachability": true,  
     "baseBranches": []
   },
   "scanSettingsSAST": {
@@ -27,7 +28,13 @@
   },
   "remediateSettings": {
     "workflowRules": {
-      "enabled": true
+      "enabled": false
+    },
+"enableRenovate": true,
+    "extends": [
+       "config:recommended",
+       "mergeConfidence:all-badges",
+       "github>mend-toolkit/mend-examples//Repo-Integration/Renovate/smart-merge"
+      ] 
     }
-  }
 }
